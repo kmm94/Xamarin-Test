@@ -4,9 +4,15 @@
              x:Class="HWCP.ChatPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="I am chat"
+            <Label
+                x:Name="ChatField"
+                Text="I am chat"
+                FontSize="Small"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                VerticalTextAlignment="End"/>
+            <Entry x:Name="Chatfield" Keyboard="Chat"/>
+            <Button Text="Holla"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -12,12 +12,20 @@ namespace HWCP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChatPage : ContentPage
 	{
+
+        private Label label;
+
 		public ChatPage ()
 		{
 			InitializeComponent ();
-            WSConnection wSConnection = new WSConnection();
-            wSConnection.connect();
-
+          //  WSConnection wSConnection = new WSConnection();
+           // wSConnection.connect();
+            label = new Label()
 		}
-	}
+
+        public void SendMessage()
+        {
+
+        }
+    }
 }
